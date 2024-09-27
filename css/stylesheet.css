@@ -1,0 +1,188 @@
+body {body {
+    background-color: #EDEFEE;
+    font-family: 'Markazi Text', serif;
+    margin: 3rem 5%;
+}
+}
+
+h1 {
+    font-size: 3rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #555;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+header > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    max-width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+nav a:active {
+    background-color: #555;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    margin: 1.5rem 0;
+    flex-wrap: wrap;
+}
+
+article {
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+article p {
+    font-size: 1.25rem;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+article ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+article li {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0.5rem 0;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-top: 1px solid #ddd;
+    margin-top: 2rem;
+}
+
+footer img {
+    width: 100px;
+    height: auto;
+}
+
+footer p {
+    margin: auto;
+    font-size: 1rem;
+}
+
+@media (max-width: 1024px) {
+    body {
+        margin: 2rem 3%;
+    }
+
+    nav a {
+        font-size: 1.3rem;
+        padding: 8px 15px;
+    }
+
+    article {
+        max-width: 250px;
+        margin: 0.5rem; /* Reduce margin to fit articles */
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    nav li {
+        display: block; /* Stack navigation items */
+        margin: 10px 0;
+    }
+
+    nav a {
+        font-size: 1.2rem;
+        padding: 10px;
+        display: block; /* Make each link full-width */
+    }
+
+    section {
+        flex-direction: column; /* Stack sections vertically */
+        align-items: center;
+    }
+
+    article {
+        max-width: 90%; /* Make articles wider on small screens */
+    }
+
+    footer {
+        flex-direction: column; /* Stack footer elements */
+        text-align: center;
+    }
+
+    footer img {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        margin: 1rem 2%;
+    }
+
+    h1 {
+        font-size: 2.5rem; /* Adjust font size for small screens */
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    nav a {
+        font-size: 1.1rem; /* Further reduce nav link font size */
+    }
+
+    article p {
+        font-size: 1.1rem;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+}
